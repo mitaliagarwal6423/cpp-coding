@@ -1,0 +1,20 @@
+//https://www.codechef.com/problems/INTEST
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i,k,n,count=0;
+    int ti;
+    cin>>n>>k;
+    for(i=1;i<=n;i++)
+    {
+        cin>>ti;
+    
+        if(ti%k==0)
+        {
+            count++;
+        }
+    }
+    cout<<count;
+    return 0;
+}
