@@ -1,0 +1,19 @@
+//https://www.codechef.com/problems/FLOW001
+#include <bits/stdc++.h> 
+
+using namespace std;
+
+int main() {
+	// Read the number of test cases.
+	int T;
+	int a,b,add;
+	cin>>T;
+	for(int i=1;i<=T;i++)
+	{ 
+	    cin>>a>>b;
+	add= a+b;
+	cout<<add<<endl;
+	}
+	
+	return 0;
+}
