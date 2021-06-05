@@ -1,0 +1,22 @@
+//https://www.codechef.com/problems/FLOW006
+#include <iostream>
+using namespace std;
+
+int main() {
+	int i,t,n,add=0,rem;
+	cin>>t;
+	for(i=1;i<=t;i++)
+	{
+	cin>>n;
+	while(n!=0)
+	{
+    rem=n%10;
+    n=n/10;
+    add= add+rem;
+	}
+	cout<<add<<endl;
+	add=0;
+	}
+	
+	return 0;
+}
