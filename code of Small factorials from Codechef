@@ -1,0 +1,23 @@
+//https://www.codechef.com/problems/FCTRL2
+#include <iostream>
+#include<boost/multiprecision/cpp_int.hpp>
+using namespace std;
+using namespace boost::multiprecision;
+
+int main() {
+   int i,t,n;
+   cin>>t;
+   for(i=0;i<t;i++)
+   { 
+       cpp_int fact=1;
+       cin>>n;
+
+       while(n!=0)
+       {
+           fact = fact*n;
+           n--;
+       }
+       cout<<fact<<endl;
+   }
+	return 0;
+}
