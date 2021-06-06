@@ -1,0 +1,22 @@
+//https://www.codechef.com/problems/FLOW004
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,n,i,last,first,sum=0;
+	cin>>t;
+	for(i=1;i<=t;i++)
+	{
+	    cin>>n;
+	    last=n%10;
+	    first=n;
+	    while(n>=10)
+	    {
+	        n=n/10;
+	    }
+	    first=n;
+	    sum=first+last;
+	    cout<<sum<<'\n';
+	}
+	return 0;
+}
