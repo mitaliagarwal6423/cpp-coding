@@ -1,0 +1,25 @@
+//https://www.codechef.com/problems/LUCKFOUR
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int i,t;
+	cin>>t;
+	int n;
+	for(i=0;i<t;i++)
+	{
+	    int count=0;
+	    cin>>n;
+	    while(n!='\0')
+	    {
+	
+	if(n%10==4)
+	{
+	    count++;
+	}
+	n=n/10;
+	    }
+	    cout<<count<<"\n";
+	}
+	return 0;
+}
