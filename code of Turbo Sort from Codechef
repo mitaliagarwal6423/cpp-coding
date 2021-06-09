@@ -1,0 +1,22 @@
+//https://www.codechef.com/problems/TSORT
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int i,j,t,temp,s;
+	cin>>t;
+	int arr[t];
+	for(i=0;i<t;i++)
+	{
+	    cin>>arr[i];
+	}
+	s= sizeof(arr)/sizeof(arr[0]);
+	sort(arr,arr+s);
+	  
+	  for(i=0;i<t;i++)
+	  {
+	      cout<<arr[i]<<"\n";
+	      
+	  }
+	return 0;
+}
