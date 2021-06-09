@@ -1,0 +1,23 @@
+//https://www.codechef.com/problems/FLOW007
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,i,r;
+	cin>>t;
+	int arr;
+	for(i=0;i<t;i++)
+	{
+	    cin>>arr;
+	    int k=0;
+	    while(arr>0)
+	    {
+	        r=arr%10;
+	        k=(k*10)+r;
+	        arr=arr/10;
+	    }
+	    cout<<k<<"\n";
+	}
+    
+	return 0;
+}
