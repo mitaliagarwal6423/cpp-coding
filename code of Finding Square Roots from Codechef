@@ -1,0 +1,15 @@
+//https://www.codechef.com/problems/FSQRT
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int i,t,n,result;
+	cin>>t;
+	for(i=0;i<t;i++)
+	{
+	    cin>>n;
+	    result=sqrt(n);
+	    cout<<result<<"\n";
+	}
+	return 0;
+}
