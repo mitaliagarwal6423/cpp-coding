@@ -1,0 +1,26 @@
+//https://www.codechef.com/problems/CIELRCPT
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main() 
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int p,count=0;
+	    cin>>p;
+	    for(int i=11;i>=0;i--)
+	    {
+	        int cp=pow(2,i);
+	        while(p>=cp)
+	        {
+	            p-=cp;
+	            count++;
+	        }
+	    }
+	    cout<<count<<endl;
+	}
+	return 0;
+}
