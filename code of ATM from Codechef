@@ -6,7 +6,7 @@ int main() {
 int x;
  double y,total;
  cin>>x>>y;
- 
+ //cout<<x;
  if((x%5==0) && (y-0.50>=x))
  {
      total =y-x-0.50;
